@@ -33,13 +33,13 @@ def crawl_links(last_time=None):
             print("")
 
         # Chờ trang web tải thêm nội dung
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(20)
 
         # Lấy nội dung mới đã tải và sử dụng BeautifulSoup để phân tích cú pháp HTML
         
             
         a+=1
-        if a>=100:
+        if a>=300:
             break
         
     new_content = driver.find_element("xpath","//div[@class='c-template-list is-large-pc']")

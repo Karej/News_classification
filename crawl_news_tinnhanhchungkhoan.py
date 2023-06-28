@@ -72,7 +72,7 @@ def crawl_links(last_time=None):
         try:
             button = driver.find_element(By.CLASS_NAME, "control__loadmore")
             button.click()
-        except "NoSuchElementException":
+        except :
             break
 
         # Wait for the content to load
